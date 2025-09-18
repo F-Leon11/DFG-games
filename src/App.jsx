@@ -6,7 +6,7 @@ import ImageCarousel from "./Components/ImageCarousel";
 import Register from "./Components/Register";
 import Login from "./Components/Login";
 import CartSummary from "./Components/CartSummary";
-import { CartProvider } from "../Context/CartContext";
+import { CartProvider } from "./Context/CartContext";
 import "./App.css";
 
 function App() {
