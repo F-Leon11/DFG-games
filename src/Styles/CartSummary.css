@@ -1,0 +1,126 @@
+/* Fondo oscuro */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/* Contenedor */
+.cart-container {
+  background: #2d2d2d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  color: white;
+}
+
+/* Encabezado */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: white;
+}
+
+/* Carrito vacío */
+.empty-cart {
+  text-align: center;
+  color: #bbb;
+}
+
+/* Lista */
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #3a3a3a;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+}
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.item-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.item-info p {
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+.item-info .price {
+  color: #4da3ff;
+}
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  color: #ff8080;
+}
+
+/* Totales */
+.cart-totals {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+.cart-totals .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.cart-totals .total {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #4da3ff;
+}
+
+/* Botón de pagar */
+.btn-pay {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-pay:hover {
+  background: #0056b3;
+}
